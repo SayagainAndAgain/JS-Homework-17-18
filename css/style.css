@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Times;
+}
+.scroll-button{
+    float: left;
+}
+.jcarousel {
+    float: left;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+.wrapper{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*checkbox style*/
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"] + label {
+    background: url("../img/checkbox-sprite.gif") 0 2px no-repeat;
+    padding-left: 20px;
+}
+
+input[type="checkbox"]:checked + label {
+    background-position: 0 -30px;
+}
+input[type="checkbox"]:checked ~ #ex2 {
+    background-color: yellow;
+}
